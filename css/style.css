@@ -1,0 +1,108 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 1%;
+    box-sizing: border-box;
+}
+img{
+    padding: 0%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  
+    border: 2px solid greenyellow;
+}
+.img_container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: antiquewhite;
+}
+html{
+    font-size: 65%;
+    font-family: 'Times New Roman', Times, serif;
+}
+main_div{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
+.music_container{
+    width: 36rem;
+    height: 55rem;
+    background-color: beige;
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 3rem .5rem rgb(0, 0, 0,2);
+}
+.music_container #title{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: #171717;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow:  0 0.3rem 0.5rem rgba(0,0,0,0.3);
+}
+.music_controls{
+    margin-top: 100px;
+    padding: 20px;
+    width: 348px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.music_controls .fa-solid{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.music_controls .fa-solid:hover{
+    color: yellow;
+    cursor:pointer;
+
+}
+.music_controls .fa-play:hover{
+    color: yellow;
+    background-color: aliceblue;
+
+}
+audio{
+    margin-top: 10px;
+}
+.music_controls .main_button{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.anime{
+    animation: rotate  4s linear infinite;
+    -webkit-animation: rotate  4s linear infinite;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+    to{ transform:rotate(360deg) ; -webkit-transform:rotate(360deg) ; -moz-transform:rotate(360deg) ; -ms-transform:rotate(360deg) ; -o-transform:rotate(360deg) ; }
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.center{
+    padding: 10px;
+}
